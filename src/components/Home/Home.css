@@ -1,0 +1,122 @@
+@media (min-width: 601px) {
+    .heading1, .styledtext{
+      font-size: 6rem;
+    }
+    .heading1 {
+      margin-top: 100px;
+    }
+    .styles2 {
+      font-size: 6rem;
+    }
+    ul li a {
+      width: 60px;
+    }
+  }
+  /*Mobile*/
+  @media (min-width: 0px) and (max-width: 600px) {
+    /* CSS */
+    .heading1 {
+      margin-top: 10px;
+    }
+    .styles2 {
+      margin-bottom: -50px;
+    }
+    .styledtext {
+      font-size: 38%;
+      display: block;
+      margin-bottom: 35px;
+    }
+    .styles2 {
+      font-size: 35%;
+    }
+    ul li a {
+      width: 50px;
+    }
+  }
+  /*General CSS */
+  ul {
+    justify-content: center;
+    margin:10px 0 0 0;
+    padding:0;
+    display:flex;
+  }
+  ul li {
+    list-style: none;
+  }
+  ul li a {
+    position: relative;
+    height:60px;
+    display:block;
+    text-align:center;
+    margin:0 10px;
+    border-radius: 50%;
+    padding: 6px;
+    box-sizing: border-box;
+    text-decoration:none;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+    background: linear-gradient(0deg, rgb(194, 48, 48), rgb(151, 83, 83));
+    transition: .5s;
+  }
+  ul li a:hover {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    text-decoration:none;
+  }
+  ul li a .fab {
+    width: 100%;
+    height:100%;
+    display:block;
+    background: linear-gradient(0deg, rgb(238, 231, 231), rgb(167, 97, 97));
+    border-radius: 50%;
+    line-height: calc(60px - 12px);
+    font-size:24px;
+    color: #262626;
+    transition: .5s;
+  }
+  ul li:nth-child(1) a:hover .fab {
+    color: #3B5998;
+  }
+  ul li:nth-child(2) a:hover .fab {
+    color: #00ACED;
+  }
+  ul li:nth-child(3) a:hover .fab {
+    color: #DD4B39;
+  }
+  ul li:nth-child(4) a:hover .fab {
+    color: #007BB6;
+  }
+  ul li:nth-child(5) a:hover .fab {
+    color: #E4405F;
+  }
+  .heading1{
+  color: rgb(46, 35, 71);
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 6rem;
+  }
+  .colrtext{
+    color:cadetblue;
+  }
+  .styledtext{
+    font-family: 'Fuggles', cursive;
+  }
+  .styles2{
+    font-family: fantasy;
+  }
+  .inlineWraps{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .inlineWraps h2{
+    margin-right: 10px;
+  }
+  .borderRadius{
+    border-radius: 20px 20px 20px 20px;
+  }
+  .getStartedButton {
+    margin-top: 20px;
+  }
+  
+  
+  
