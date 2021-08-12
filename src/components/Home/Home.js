@@ -1,7 +1,11 @@
+import "./Home.css";
+import OurSons from '../../images/Oursons_2021.jpg';
+
+
 function Home() {
     return (
         <>
-            <h1 className="text-center heading1"><span className="styles2">Author of Our Son's</span> <span classNameName="styledtext">Dejohn
+            <h1 className="text-center heading1"><span className="styles2">Author of Our Son's</span> <span className="styledtext">Dejohn
                 Huffman</span></h1>
 
             <div className="text-center">
@@ -10,7 +14,7 @@ function Home() {
                     <h2 className="shadow p-3 mb-5 bg-white borderRadius" >Drama Suspense!</h2>
 
                 </div>
-                <img src="images/Oursons_2021.jpg" />
+                <img src={OurSons} alt="Our Sons Logo"/>
                 <ul>
                     <li><a href="#"><i className="fab fa-facebook" aria-hidden="true"></i></a></li>
                     <li><a href="#"><i className="fab fa-twitter" aria-hidden="true"></i></a></li>
