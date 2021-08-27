@@ -1,5 +1,6 @@
 import "./Home.css";
 import OurSons from '../../images/Oursons_2021.jpg';
+import {Link } from 'react-router-dom'
 
 
 function Home() {
@@ -22,7 +23,7 @@ function Home() {
                     <li><a href="#"><i className="fab fa-linkedin" aria-hidden="true"></i></a></li>
                     <li><a href="https://www.instagram.com/billyclub_1/"><i className="fab fa-instagram" aria-hidden="true"></i></a></li>
                 </ul>
-                <button type="button" className="btn btn-danger btn-lg getStartedButton">Get Started</button>
+                <Link to='/contact' className="btn btn-danger btn-lg getStartedButton">Get Started</Link>
             </div>
         </>
     )
