@@ -1,0 +1,5 @@
+.redLinear {
+  border: 10px solid rgb(194, 48, 48);
+  /* box-shadow: 2px 2px 2px 1px */
+  /* linear-gradient(0deg, rgb(194, 48, 48), rgb(151, 83, 83)); */
+}
