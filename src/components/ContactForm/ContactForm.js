@@ -32,24 +32,33 @@ const ContactForm = () => {
       <div className="d-flex justify-content-center">
         <Form
           onSubmit={sendEmail}
-          className="p-3 col-md-6 bg-white borderRadius redLinear"
+          className="contact-form p-3 col-md-6 bg-white borderRadius redLinear"
         >
-          {/* <Form.Group className="mb-3" controlId="exampleForm.ControlInput1"> */}
-            <Form.Label>Name</Form.Label>
-            <Form.Control type="text" name="user_name" className="mb-2" />
-            <Form.Label>Email address</Form.Label>
-            <Form.Control
-              type="email"
-              name="user_email"
-              placeholder="name@example.com"
-              className="shadow p-3 mb-5"
-            />
-          {/* </Form.Group> */}
-          {/* <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1"> */}
-            <Form.Label>Enter Your Critique or Chapter Summary</Form.Label>
-            <Form.Control name="message" as="textarea" rows={3} className="shadow p-3 mb-5" />
-          {/* </Form.Group> */}
-          <Button type="submit">Submit</Button>
+          <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+          <Form.Control as="input" name="to_name" type="hidden" value="Dejohn"/>
+          <Form.Label>Name</Form.Label>
+          <Form.Control as="input" name="from_name" className="mb-2" />
+          <Form.Label>Email address</Form.Label>
+          <Form.Control
+            type="email"
+            as="input"
+            name="reply_to"
+            placeholder="name@example.com"
+            className="shadow p-3 mb-5"
+          />
+          </Form.Group>
+          <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+          <Form.Label>Enter Your Critique or Chapter Summary</Form.Label>
+          <Form.Control
+            name="message"
+            as="textarea"
+            rows={3}
+            className="shadow p-3 mb-5"
+          />
+          </Form.Group>
+          <Button type="submit" value="send">
+            Submit
+          </Button>
         </Form>
         {/* <form className="contact-form" onSubmit={sendEmail}>
           <input type="hidden" name="contact_number" />
