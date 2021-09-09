@@ -1,27 +1,28 @@
 import React from "react";
-import { Form } from "react-bootstrap";
+import { Form, Button } from "react-bootstrap";
 import "./ContactForm.css";
 import emailjs from "emailjs-com";
 
 const ContactForm = () => {
-  function sendEmail(e) {
+  const sendEmail = (e) => {
     e.preventDefault();
+    console.log("e target", e.target)
 
-    emailjs
-      .sendForm(
-        "service_qs9q9rd",
-        "template_n5yj3la",
-        e.target,
-        "user_fNVY4cfR1XC9tvth8vkxY"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    // emailjs
+    //   .sendForm(
+    //     "service_qs9q9rd",
+    //     "template_n5yj3la",
+    //     e.target,
+    //     "user_fNVY4cfR1XC9tvth8vkxY"
+    //   )
+    //   .then(
+    //     (result) => {
+    //       console.log(result.text);
+    //     },
+    //     (error) => {
+    //       console.log(error.text);
+    //     }
+    //   );
   }
   return (
     <>
@@ -46,6 +47,7 @@ const ContactForm = () => {
             <Form.Label>Enter Your Critique or Chapter Summary</Form.Label>
             <Form.Control as="textarea" rows={3} className="shadow p-3 mb-5" />
           </Form.Group>
+          <Button type="submit">Submit</Button>
         </Form>
       </div>
     </>
