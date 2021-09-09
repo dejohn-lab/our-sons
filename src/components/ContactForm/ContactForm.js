@@ -5,24 +5,25 @@ import emailjs from "emailjs-com";
 
 const ContactForm = () => {
   const sendEmail = (e) => {
-    e.preventDefault();
-    console.log("e target", e.target)
 
-    // emailjs
-    //   .sendForm(
-    //     "service_qs9q9rd",
-    //     "template_n5yj3la",
-    //     e.target,
-    //     "user_fNVY4cfR1XC9tvth8vkxY"
-    //   )
-    //   .then(
-    //     (result) => {
-    //       console.log(result.text);
-    //     },
-    //     (error) => {
-    //       console.log(error.text);
-    //     }
-    //   );
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_qs9q9rd",
+        "template_n5yj3la",
+        e.target,
+        "user_fNVY4cfR1XC9tvth8vkxY"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+      
   }
   return (
     <>
