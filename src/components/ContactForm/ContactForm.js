@@ -34,7 +34,7 @@ const ContactForm = () => {
           onSubmit={sendEmail}
           className="p-3 col-md-6 bg-white borderRadius redLinear"
         >
-          <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+          {/* <Form.Group className="mb-3" controlId="exampleForm.ControlInput1"> */}
             <Form.Label>Name</Form.Label>
             <Form.Control type="text" name="user_name" className="mb-2" />
             <Form.Label>Email address</Form.Label>
@@ -44,11 +44,11 @@ const ContactForm = () => {
               placeholder="name@example.com"
               className="shadow p-3 mb-5"
             />
-          </Form.Group>
-          <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+          {/* </Form.Group> */}
+          {/* <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1"> */}
             <Form.Label>Enter Your Critique or Chapter Summary</Form.Label>
-            <Form.Control as="textarea" rows={3} className="shadow p-3 mb-5" />
-          </Form.Group>
+            <Form.Control name="message" as="textarea" rows={3} className="shadow p-3 mb-5" />
+          {/* </Form.Group> */}
           <Button type="submit">Submit</Button>
         </Form>
         {/* <form className="contact-form" onSubmit={sendEmail}>
